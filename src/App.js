@@ -1,9 +1,18 @@
 import react, { Component } from "react";
+import ColorPicker from './ColorPicker';
+import KanyeQuoter from './KanyeQuoter';
 
 class App extends Component {
     render() {
         return (
-            <h1>Gradient Background Generator</h1>
+            <>
+            <div className='tc'>
+                <h1>Gradient Background Generator</h1>
+                <ColorPicker />
+                <KanyeQuoter />
+            </div>
+            </>
+            
         )
     }
 }
