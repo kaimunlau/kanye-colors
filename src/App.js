@@ -8,10 +8,10 @@ import './App.css';
 class App extends Component {
     constructor() {
         super()
-        this.colorPicker = createRef();
         this.state = {
             color1: '#FF0000',
-            color2: '#FFFF00'
+            color2: '#FFFF00',
+            quote: ''
         }
     }
     OnColorPickerChange = (event) => {
@@ -22,13 +22,21 @@ class App extends Component {
         }
         document.body.style.background = `linear-gradient(to right, ${this.state.color1}, ${this.state.color2}`
     }
-    MagicColor = (event) => {
-        const randomColor1 = Math.floor(Math.random()*16777215).toString(16);
-	    const randomColor2 = Math.floor(Math.random()*16777215).toString(16);
-        this.setState({color1: `#${randomColor1}`, color2: `#${randomColor2}`}, function() {
-            document.body.style.background = `linear-gradient(to right, ${this.state.color1}, ${this.state.color2}`
-        console.log(`magic button has values of ${this.state.color1} and ${this.state.color2}`)
-        })
+    MagicColorButtonClicked = (event) => {
+        this.getKanyeQuote();
+        this.assignRandomColors();
+    }
+    assignRandomColors() {
+        const randomColor1 = Math.floor(Math.random() * 16777215).toString(16);
+        const randomColor2 = Math.floor(Math.random() * 16777215).toString(16);
+        this.setState({ color1: `#${randomColor1}`, color2: `#${randomColor2}` }, function () {
+            document.body.style.background = `linear-gradient(to right, ${this.state.color1}, ${this.state.color2}`;
+        });
+    }
+    getKanyeQuote() {
+        fetch('https://api.kanye.rest/')
+            .then(response => response.json())
+            .then(json => this.setState({ quote: json.quote }));
     }
     render() {
         return (
@@ -36,9 +44,9 @@ class App extends Component {
             <div className='tc'>
                 <h1>Gradient Background Generator</h1>
                 <ColorPicker colorChange={this.OnColorPickerChange} color1={this.state.color1} color2={this.state.color2}/>
-                <MagicButton magicButton={this.MagicColor}/>
+                <MagicButton magicButton={this.MagicColorButtonClicked}/>
                 <ErrorBoundry>
-                    <KanyeQuoter />
+                    <KanyeQuoter quote={this.state.quote}/>
                 </ErrorBoundry>
             </div>
             </>
