@@ -1,6 +1,9 @@
 import react, { Component } from "react";
 
 class KanyeQuoter extends Component {
+    componentDidMount() {
+        console.log('kanye mounted')
+    }
     render() {
         return (
             <>
@@ -10,6 +13,7 @@ class KanyeQuoter extends Component {
                 <p>-Kanye</p>
             </>
         )
+        
     }
 }
 
