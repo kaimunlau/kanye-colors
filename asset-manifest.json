@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kaimunlau/kanye-colors/static/css/main.6430c6b2.css",
+    "main.js": "/kaimunlau/kanye-colors/static/js/main.2d70cace.js",
+    "static/js/787.d9087406.chunk.js": "/kaimunlau/kanye-colors/static/js/787.d9087406.chunk.js",
+    "index.html": "/kaimunlau/kanye-colors/index.html",
+    "main.6430c6b2.css.map": "/kaimunlau/kanye-colors/static/css/main.6430c6b2.css.map",
+    "main.2d70cace.js.map": "/kaimunlau/kanye-colors/static/js/main.2d70cace.js.map",
+    "787.d9087406.chunk.js.map": "/kaimunlau/kanye-colors/static/js/787.d9087406.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6430c6b2.css",
+    "static/js/main.2d70cace.js"
+  ]
+}
