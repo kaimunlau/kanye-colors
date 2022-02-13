@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kaimunlau/kanye-colors/static/css/main.6430c6b2.css",
-    "main.js": "/kaimunlau/kanye-colors/static/js/main.2d70cace.js",
-    "static/js/787.d9087406.chunk.js": "/kaimunlau/kanye-colors/static/js/787.d9087406.chunk.js",
-    "index.html": "/kaimunlau/kanye-colors/index.html",
-    "main.6430c6b2.css.map": "/kaimunlau/kanye-colors/static/css/main.6430c6b2.css.map",
-    "main.2d70cace.js.map": "/kaimunlau/kanye-colors/static/js/main.2d70cace.js.map",
-    "787.d9087406.chunk.js.map": "/kaimunlau/kanye-colors/static/js/787.d9087406.chunk.js.map"
+    "main.css": "/kanye-colors/static/css/main.6430c6b2.css",
+    "main.js": "/kanye-colors/static/js/main.f2e5f9fd.js",
+    "static/js/787.d9087406.chunk.js": "/kanye-colors/static/js/787.d9087406.chunk.js",
+    "index.html": "/kanye-colors/index.html",
+    "main.6430c6b2.css.map": "/kanye-colors/static/css/main.6430c6b2.css.map",
+    "main.f2e5f9fd.js.map": "/kanye-colors/static/js/main.f2e5f9fd.js.map",
+    "787.d9087406.chunk.js.map": "/kanye-colors/static/js/787.d9087406.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6430c6b2.css",
-    "static/js/main.2d70cace.js"
+    "static/js/main.f2e5f9fd.js"
   ]
 }
