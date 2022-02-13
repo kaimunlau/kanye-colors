@@ -1,4 +1,6 @@
-const ColorPicker = ({ colorChange }) => {
+import { Component } from "react";
+
+const ColorPicker = ({ colorChange, color1, color2 }) => {
     return(
         <div>
             <input 
@@ -6,16 +8,15 @@ const ColorPicker = ({ colorChange }) => {
             type="color" 
             name="color1"
             onChange={colorChange}
-            defaultValue='#FF0000'
+            value={color1}
             ></input>
             <input 
             className="color2" 
             type="color" 
             name="color2"
             onChange={colorChange}
-            defaultValue='#FFFF00'
-            ></input><br/>
-            <button>I want some magic</button>
+            value={color2}
+            ></input>
         </div>
     )
 }
