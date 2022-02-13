@@ -2,6 +2,7 @@ import react, { Component, createRef } from "react";
 import ColorPicker from './ColorPicker';
 import KanyeQuoter from './KanyeQuoter';
 import MagicButton from './MagicButton';
+import ErrorBoundry from './ErrorBoundry';
 import './App.css';
 
 class App extends Component {
@@ -36,7 +37,9 @@ class App extends Component {
                 <h1>Gradient Background Generator</h1>
                 <ColorPicker colorChange={this.OnColorPickerChange} color1={this.state.color1} color2={this.state.color2}/>
                 <MagicButton magicButton={this.MagicColor}/>
-                <KanyeQuoter />
+                <ErrorBoundry>
+                    <KanyeQuoter />
+                </ErrorBoundry>
             </div>
             </>
         )
