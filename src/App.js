@@ -11,7 +11,7 @@ class App extends Component {
         this.state = {
             color1: '#FF0000',
             color2: '#FFFF00',
-            quote: ''
+            quote: 'I care. I care about everything. Sometimes not giving a f#%k is caring the most.'
         }
     }
     OnColorPickerChange = (event) => {
