@@ -7,23 +7,23 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            color1: '',
-            color2: ''
+            color1: 'red',
+            color2: 'yellow'
         }
     }
     OnColorPickerChange = (event) => {
         if (event.target.className === "color1") {
             this.setState({ color1: event.target.value})
-        } else if (event.target.className === "color2") {
+        } if (event.target.className === "color2") {
             this.setState({ color2: event.target.value})
         }
+        document.body.style.background = `linear-gradient(to right, ${this.state.color1}, ${this.state.color2}`
         console.log(this.state)
     }
     render() {
-        const { color1, color2 } = this.state;
         return (
             <>
-            <div className='tc' style={{background: 'linear-gradient(to right, ${color1}, ${color2})'}}>
+            <div className='tc'>
                 <h1>Gradient Background Generator</h1>
                 <ColorPicker colorChange={this.OnColorPickerChange}/>
                 <KanyeQuoter />
