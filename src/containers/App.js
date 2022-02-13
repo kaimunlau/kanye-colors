@@ -1,8 +1,8 @@
-import react, { Component, createRef } from "react";
-import ColorPicker from './ColorPicker';
-import KanyeQuoter from './KanyeQuoter';
-import MagicButton from './MagicButton';
-import ErrorBoundry from './ErrorBoundry';
+import { Component } from "react";
+import ColorPicker from '../components/ColorPicker';
+import KanyeQuoter from '../components/KanyeQuoter';
+import MagicButton from '../components/MagicButton';
+import ErrorBoundry from '../ErrorBoundry';
 import './App.css';
 
 class App extends Component {
@@ -15,9 +15,9 @@ class App extends Component {
         }
     }
     OnColorPickerChange = (event) => {
-        if (event.target.className === "color1") {
+        if (event.target.id === "1") {
             this.setState({ color1: event.target.value})
-        } if (event.target.className === "color2") {
+        } if (event.target.id === "2") {
             this.setState({ color2: event.target.value})
         }
         document.body.style.background = `linear-gradient(to right, ${this.state.color1}, ${this.state.color2}`
