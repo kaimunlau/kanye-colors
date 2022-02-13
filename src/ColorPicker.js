@@ -2,16 +2,16 @@ import { Component } from "react";
 
 const ColorPicker = ({ colorChange, color1, color2 }) => {
     return(
-        <div>
+        <div className='pa2'>
             <input 
-            className="color1" 
+            className="color1 ma2" 
             type="color" 
             name="color1"
             onChange={colorChange}
             value={color1}
             ></input>
             <input 
-            className="color2" 
+            className="color2 ma2" 
             type="color" 
             name="color2"
             onChange={colorChange}
